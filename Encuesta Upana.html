@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de satisfacción</title>
+
+    <link rel="stylesheet" href="Encuesta.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Universidad Panamericana</h1>
+        <img src="https://th.bing.com/th/id/R.b84edefd38924ff4c0c9bc325f073566?rik=xUgtv8xBeGJSLA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-V-VOcx_KIMU%2fUxowrdlX3GI%2fAAAAAAAAABc%2f7W2dXVv-4Vk%2fs1600%2funiversidad%2bpanamericana.png&ehk=%2fWGQ%2bK1ZCtGKSU0OA%2b5murFnqH7A2wOqCyIHhAW2hOg%3d&risl=&pid=ImgRaw&r=0" alt="Logotipo" height="100px" width="100px">
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Encuesta de satisfacción del estudiante</h2>
+            <p>
+                Muchas gracias por tu participación en esta encuesta de satisfacción 
+                diseñada para recopilar comentarios sobre tu experiencia como 
+                estudiante en la Universidad Panamericana. Tu opinión es invaluable 
+                para nosotros, ya que nos permite evaluar la calidad de nuestros servicios
+                y buscar formas de mejora continua. Por favor, tómate unos minutos para compartir 
+                tus impresiones y sugerencias. ¡Gracias por tu colaboración!
+            </p>
+        </section>
+        <fieldset id="formulario">
+            <legend>Formulario ingreso</legend>
+            <form id="form">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nombre">
+                                1. ¿Cómo te llamas?
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="satisfaccion" >
+                                2. ¿Cuál es tu nivel de satisfacción con la calidad de los cursos ofrecidos 
+                                en Universidad Panamericana?
+                            </label>
+                        </td>
+                        <td>
+                            <select id="satisfaccion" name="satisfaccion">
+                                <option value="5">Excelente</option>
+                                <option value="4">Muy bueno</option>
+                                <option value="3">Bueno</option>
+                                <option value="2">Regular</option>
+                                <option value="1">Deficiente</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="servicios">
+                                3. ¿Qué tan satisfecho estás con los servicios de asesoramiento académico y profesional 
+                                ofrecidos por la universidad?
+                            </label>
+                        </td>
+                        <td>
+                            <input type="range" min="1" max="5" value="3" step="1" id="servicios" name="servicios">
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" class="submit">
+            </form>
+            
+        </fieldset>
+        <br>
+        <fieldset id="visualizacion">
+            <legend>Visualizacion</legend>
+            <div id="vista"></div>
+        </fieldset>
+    </main>
+    <footer>
+        <h2>Encuesta realizada en 2024</h2>
+    </footer>
+
+    <script type="text/javascript" src="Encuesta.js"></script>
+</body>
+</html>
